@@ -1,14 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import ApiFunction from './ApiFunction';
+import ChooseItem from './ChooseItem';
+import ChooseAlergy from './ChooseAlergy';
+import Loader from './Loader';
+import FinalSearch from './FinalPage';
+import './App.css';
+//import{BrowserRouter, Routers, Route, Link, useParams} from "react-router-dom";
+//import Todos from "./Todos";
+//import Todo from "./Todo";
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ApiFunction />
+    <ChooseItem/>
+    <ChooseAlergy/>
+    <Loader/>
+    <FinalSearch/>
   </React.StrictMode>
+  
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
